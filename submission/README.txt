@@ -1,3 +1,4 @@
+# Virtual Memory Manager
 
 This program implements a Virtual Memory Manager in C.
 It supports both basic translation (no demand paging) and extended translation (with demand paging).
@@ -6,18 +7,14 @@ Files Included:
 - vm_manager.c
 - vm (executable)
 
-COMPILATION
------------
-
+## Compilation
 To compile the program, run:
 
     gcc vm_manager.c -o vm
 
 This creates the executable file named "vm".
 
-EXECUTION
----------
-
+## Execution
 The program requires 4 command line arguments:
 
     ./vm <init_file> <input_file> <output_file> <dp_flag>
@@ -29,9 +26,7 @@ Where:
 - dp_flag     = 0 (no demand paging)
                 1 (with demand paging)
 
-EXAMPLES
---------
-
+## Examples
 Without demand paging:
 
     ./vm init-no-dp.txt input-no-dp.txt output-no-dp.txt 0
